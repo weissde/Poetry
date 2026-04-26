@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xxd)",
+      "Bash(python *)",
+      "Bash(npx tsc *)",
+      "Bash(awk '{print $5, $9}')",
+      "Bash(python3 *)"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+﻿{
+    "name":  "poetry-ai-workspace",
+    "private":  true,
+    "scripts":  {
+                    "dev":  "powershell -ExecutionPolicy Bypass -File scripts/dev.ps1",
+                    "dev:stop":  "powershell -ExecutionPolicy Bypass -File scripts/stop-dev.ps1",
+                    "dev:backend":  "powershell -ExecutionPolicy Bypass -File scripts/backend.ps1",
+                    "dev:frontend":  "powershell -ExecutionPolicy Bypass -File scripts/frontend.ps1 -StrictPort",
+                    "health":  "powershell -ExecutionPolicy Bypass -File scripts/health.ps1",
+                    "profile:api":  "powershell -ExecutionPolicy Bypass -File scripts/profile-api.ps1",
+                    "smoke:api":  "powershell -ExecutionPolicy Bypass -File scripts/smoke-api.ps1",
+                    "seed:poems:build":  "python scripts/build-poem-seeds.py",
+                    "audit:progress":  "python scripts/audit-progress.py",
+                    "audit:runtime":  "python scripts/audit-runtime.py",
+                    "audit:all":  "python scripts/audit-all.py",
+                    "audit:all:auth":  "powershell -ExecutionPolicy Bypass -File scripts/audit-all-auth.ps1"
+                }
+}
