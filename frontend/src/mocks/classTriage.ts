@@ -1,0 +1,61 @@
+import type { ClassTriageItem } from "@/hooks/useClassTriage";
+
+export const mockTriageClasses: ClassTriageItem[] = [
+  {
+    id: "class-1",
+    name: "七年级(3)班",
+    studentCount: 42,
+    progress: 35,
+    risk: "red",
+    stuckStage: "精讲·解析",
+    stuckCount: 8,
+    actionableInsight: "8 名学生默写得分低于 60%，建议本节课先攻意象理解。",
+    primaryActionLabel: "进入精讲",
+    primaryActionHref: "/learn?classId=class-1",
+  },
+  {
+    id: "class-2",
+    name: "八年级(1)班",
+    studentCount: 38,
+    progress: 62,
+    risk: "yellow",
+    stuckStage: "练测·默写",
+    stuckCount: 5,
+    actionableInsight: "5 名学生在「意象分析」题型上反复出错，建议布置一组专项练测。",
+    primaryActionLabel: "批改作业",
+    primaryActionHref: "/practice?classId=class-2&entry=review",
+  },
+  {
+    id: "class-3",
+    name: "七年级(2)班",
+    studentCount: 40,
+    progress: 72,
+    risk: "green",
+    actionableInsight: "全班进度正常，最近一次课堂表现良好，暂无干预需求。",
+    primaryActionLabel: "查看学情",
+    primaryActionHref: "/my-learning?classId=class-3",
+  },
+  {
+    id: "class-4",
+    name: "七年级(1)班",
+    studentCount: 39,
+    progress: 68,
+    risk: "green",
+    actionableInsight: "节奏正常，建议按计划推进下一首诗词。",
+    primaryActionLabel: "查看学情",
+    primaryActionHref: "/my-learning?classId=class-4",
+  },
+];
+
+export const mockTeacherSummary = {
+  teacherName: "张老师",
+  weekOfTerm: 8,
+  weekTaughtCount: 12,
+  weekTargetCount: 20,
+  weekTaughtByDay: [3, 5, 4, 0, 0] as number[],
+  pendingHomeworkCount: 24,
+  pendingHomeworkDelta: -3 as number | undefined,
+  pendingQuestionCount: 7,
+  avgMasteryPct: 74,
+  masteryDelta: 2 as number | undefined,
+};

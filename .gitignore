@@ -18,3 +18,10 @@ backend/**/*.pyc
 logs/
 *.log
 .DS_Store
+
+# Runtime artifacts
+**/__pycache__/
+**/*.pyc
+graphify-out/cache/
+frontend/graphify-out/cache/
+.venv/

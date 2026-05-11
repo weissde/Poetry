@@ -1,0 +1,12 @@
+/* 诗境通 字体引入
+   字体栈定义在 tokens.css --font-sans / --font-serif / --font-display / --font-mono
+   本地自托管，避免 Google Fonts CDN 阻塞渲染 */
+
+/* Inter (可变字体, 100–900) */
+@import url("/fonts/inter.css");
+/* JetBrains Mono (400, 500) */
+@import url("/fonts/jetbrains-mono.css");
+/* Noto Sans SC (300, 400, 500, 700) */
+@import url("/fonts/noto-sans-sc.css");
+/* Noto Serif SC (400, 500, 600, 700) */
+@import url("/fonts/noto-serif-sc.css");
